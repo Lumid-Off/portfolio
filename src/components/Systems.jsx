@@ -1,46 +1,10 @@
 import { Smartphone, Monitor, Apple, Cpu } from 'lucide-react';
 import Section from './Section.jsx';
-
+const systems = [
+  { label: 'Phone', title: 'iOS 27.0', note: 'Developer Beta 4', icon: Smartphone },
+  { label: 'Desktop', title: 'Windows 11', note: '+ macOS Sequoia', icon: Monitor },
+  { label: 'MacBook Pro', title: 'macOS 27.0.1', note: '14″ · 2021 · A2442', icon: Apple }
+];
 export default function Systems() {
-  return (
-    <Section id="systems" num="03" title="Operating Systems" icon={Cpu}>
-      <div className="card-grid">
-        <div className="card os-card">
-          <div className="card-icon">
-            <Smartphone size={22} />
-          </div>
-          <div className="card-label">phone</div>
-          <h3>iOS 26.4</h3>
-          <p>Beta 2</p>
-          <div className="os-bar">
-            <div style={{ width: '88%' }} />
-          </div>
-        </div>
-
-        <div className="card os-card">
-          <div className="card-icon">
-            <Monitor size={22} />
-          </div>
-          <div className="card-label">pc</div>
-          <h3>Windows 11</h3>
-          <p>25H2</p>
-          <div className="os-bar">
-            <div style={{ width: '95%' }} />
-          </div>
-        </div>
-
-        <div className="card os-card">
-          <div className="card-icon">
-            <Apple size={22} />
-          </div>
-          <div className="card-label">mac</div>
-          <h3>macOS 26.3.1</h3>
-          <p>secondary</p>
-          <div className="os-bar">
-            <div style={{ width: '70%' }} />
-          </div>
-        </div>
-      </div>
-    </Section>
-  );
+  return <Section id="systems" num="03" title="Systems" icon={Cpu}><div className="card-grid">{systems.map(({label,title,note,icon:Icon})=><div className="card os-card" key={label}><div className="card-icon"><Icon size={18}/></div><div className="card-label">{label}</div><h3>{title}</h3><p>{note}</p></div>)}</div></Section>;
 }

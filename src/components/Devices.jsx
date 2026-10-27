@@ -4,20 +4,21 @@ import { Smartphone, Apple, Skull, AlertTriangle, CheckCircle2, Star, ChevronDow
 import Section from './Section.jsx';
 
 const devices = [
+  { name: 'MacBook Pro 14″ (2021)', meta: 'A2442', status: 'ok', brand: 'apple', specs: { 'Processor': 'Apple M1 Pro', 'Memory': '16 GB', 'Storage': '512 GB', 'System': 'macOS 27.0.1', 'Model': 'A2442' } },
   {
     name: 'Apple iPhone 14 Pro',
     meta: 'main phone',
     status: 'main',
     brand: 'apple',
     specs: {
-      Display: '6.1" Super Retina XDR · 120 Hz · Dynamic Island',
-      Chip: 'Apple A16 Bionic',
-      RAM: '6 GB',
-      Storage: '128 GB',
-      Camera: '48 + 12 + 12 MP · Lidar',
-      Battery: '3200 mAh',
-      OS: 'iOS 26.4 beta',
-      Color: 'Space Black',
+      'Display': '6.1" Super Retina XDR · 120 Hz · Dynamic Island',
+      'Processor': 'Apple A16 Bionic',
+      'Memory': '6 GB',
+      'Storage': '128 GB',
+      'Camera': '48 + 12 + 12 MP · Lidar',
+      'Battery': '3200 mAh',
+      'System': 'iOS 27.0 Developer Beta 4',
+      'Color': 'Space Black',
     },
   },
   {
@@ -26,14 +27,14 @@ const devices = [
     status: 'ok',
     brand: 'apple',
     specs: {
-      Display: '5.8" Super Retina OLED · 60 Hz',
-      Chip: 'Apple A12 Bionic',
-      RAM: '4 GB',
-      Storage: '256 GB',
-      Camera: '12 + 12 MP',
-      Battery: '2658 mAh',
-      OS: 'iOS 18',
-      Color: 'Silver',
+      'Display': '5.8" Super Retina OLED · 60 Hz',
+      'Processor': 'Apple A12 Bionic',
+      'Memory': '4 GB',
+      'Storage': '256 GB',
+      'Camera': '12 + 12 MP',
+      'Battery': '2658 mAh',
+      'System': 'iOS 18',
+      'Color': 'Silver',
     },
   },
   {
@@ -42,110 +43,46 @@ const devices = [
     status: 'ok',
     brand: 'samsung',
     specs: {
-      Display: '5.8" Super AMOLED · QHD+ · 60 Hz',
-      Chip: 'Exynos 8895',
-      RAM: '4 GB',
-      Storage: '64 GB',
-      Camera: '12 MP · OIS',
-      Battery: '3000 mAh',
-      OS: 'Android 9 Pie',
-      Color: 'Midnight Black',
-    },
-  },
-  {
-    name: 'Apple iPhone SE 2016',
-    meta: '50/50 working',
-    status: 'warn',
-    brand: 'apple',
-    specs: {
-      Display: '4.0" Retina · 60 Hz',
-      Chip: 'Apple A9',
-      RAM: '2 GB',
-      Storage: '32 GB',
-      Camera: '12 MP',
-      Battery: '1624 mAh',
-      OS: 'iOS 15',
-      Note: 'battery + frame issues',
-    },
-  },
-  {
-    name: 'Apple iPhone 5',
-    meta: 'iCloud, bypassed',
-    status: 'ok',
-    brand: 'apple',
-    specs: {
-      Display: '4.0" Retina · 60 Hz',
-      Chip: 'Apple A6',
-      RAM: '1 GB',
-      Storage: '16 GB',
-      Camera: '8 MP',
-      Battery: '1440 mAh',
-      OS: 'iOS 10 (bypass)',
-      Note: 'iCloud lock bypassed',
-    },
-  },
-  {
-    name: 'Google Pixel 4 XL',
-    meta: 'died UFS',
-    status: 'dead',
-    brand: 'google',
-    specs: {
-      Display: '6.3" P-OLED · 90 Hz',
-      Chip: 'Snapdragon 855',
-      RAM: '6 GB',
-      Storage: '64 GB',
-      Camera: '12.2 + 16 MP · Soli',
-      Battery: '3700 mAh',
-      OS: 'Android 13',
-      Note: 'UFS storage failure',
-    },
-  },
-  {
-    name: 'Xiaomi Redmi Note 9',
-    meta: 'full died lmao',
-    status: 'dead',
-    brand: 'xiaomi',
-    specs: {
-      Display: '6.53" IPS · FHD+ · 60 Hz',
-      Chip: 'MediaTek Helio G85',
-      RAM: '4 GB',
-      Storage: '64 GB',
-      Camera: '48 + 8 + 2 + 2 MP',
-      Battery: '5020 mAh',
-      OS: 'MIUI 12',
-      Note: 'fully bricked',
+      'Display': '5.8" Super AMOLED · QHD+ · 60 Hz',
+      'Processor': 'Exynos 8895',
+      'Memory': '4 GB',
+      'Storage': '64 GB',
+      'Camera': '12 MP · OIS',
+      'Battery': '3000 mAh',
+      'System': 'Android 9 Pie',
+      'Color': 'Midnight Black',
     },
   },
   {
     name: 'Samsung Galaxy A30s',
-    meta: 'full working',
+    meta: 'working',
     status: 'ok',
     brand: 'samsung',
     specs: {
-      Display: '6.4" Super AMOLED · HD+',
-      Chip: 'Exynos 7904',
-      RAM: '4 GB',
-      Storage: '64 GB',
-      Camera: '25 + 8 + 5 MP',
-      Battery: '4000 mAh',
-      OS: 'Android 11',
-      Color: 'Prism Crush Black',
+      'Display': '6.4" Super AMOLED · HD+',
+      'Processor': 'Exynos 7904',
+      'Memory': '4 GB',
+      'Storage': '64 GB',
+      'Camera': '25 + 8 + 5 MP',
+      'Battery': '4000 mAh',
+      'System': 'Android 11',
+      'Color': 'Black',
     },
   },
   {
     name: 'Samsung Galaxy S2',
-    meta: 'need display',
+    meta: 'needs a screen',
     status: 'warn',
     brand: 'samsung',
     specs: {
-      Display: '4.3" Super AMOLED Plus',
-      Chip: 'Exynos 4210',
-      RAM: '1 GB',
-      Storage: '16 GB',
-      Camera: '8 MP',
-      Battery: '1650 mAh',
-      OS: 'Android 4.1.2',
-      Note: 'display cracked, needs replacement',
+      'Display': '4.3" Super AMOLED Plus',
+      'Processor': 'Exynos 4210',
+      'Memory': '1 GB',
+      'Storage': '16 GB',
+      'Camera': '8 MP',
+      'Battery': '1650 mAh',
+      'System': 'Android 4.1.2',
+      'Note': 'Damaged screen, needs replacement',
     },
   },
 ];
@@ -167,7 +104,7 @@ const BrandIcon = ({ brand }) => {
 
 function DeviceRow({ device, index, open, onToggle }) {
   return (
-    <div className={`device device-${device.status} ${open ? 'open' : ''}`}>
+    <div className={`device device-${{ main: 'main', ok: 'ok', warn: 'repair' }[device.status]} ${open ? 'open' : ''}`}>
       <button
         type="button"
         className="device-head"
@@ -178,9 +115,9 @@ function DeviceRow({ device, index, open, onToggle }) {
         <span className="device-brand"><BrandIcon brand={device.brand} /></span>
         <span className="device-name">{device.name}</span>
         <span className="device-meta">{device.meta}</span>
-        <span className={`device-status status-${device.status}`}>
-          <StatusIcon status={device.status} />
-          {device.status}
+        <span className={`device-status status-${{ main: 'main', ok: 'ok', warn: 'repair' }[device.status]}`}>
+          <StatusIcon status={{ main: 'main', ok: 'ok', warn: 'repair' }[device.status]} />
+          {{ main: 'main', ok: 'ok', warn: 'repair' }[device.status]}
         </span>
         <span className="device-chev" aria-hidden>
           <ChevronDown size={14} />
@@ -216,15 +153,13 @@ export default function Devices() {
 
   const ok   = devices.filter(d => d.status === 'ok' || d.status === 'main').length;
   const warn = devices.filter(d => d.status === 'warn').length;
-  const dead = devices.filter(d => d.status === 'dead').length;
 
   return (
-    <Section id="devices" num="04" title="Devices Collection" icon={Smartphone}>
+    <Section id="devices" num="04" title="Devices" icon={Smartphone}>
       <div className="device-stats">
         <div className="stat"><span className="stat-num">{devices.length}</span><span className="stat-key">total</span></div>
         <div className="stat"><span className="stat-num">{ok}</span><span className="stat-key">working</span></div>
-        <div className="stat"><span className="stat-num">{warn}</span><span className="stat-key">issues</span></div>
-        <div className="stat"><span className="stat-num">{dead}</span><span className="stat-key">dead</span></div>
+        <div className="stat"><span className="stat-num">{warn}</span><span className="stat-key">need repair</span></div>
       </div>
 
       <div className="device-list">

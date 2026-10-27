@@ -4,11 +4,10 @@ import Section from './Section.jsx';
 const items = [
   { key: 'Mouse', val: 'Attack Shark X3 Pro', icon: Mouse },
   { key: 'Keyboard', val: 'Ajazz AK820', icon: Keyboard },
-  { key: 'Monitor (main)', val: 'Samsung Odyssey G5', icon: Monitor },
-  { key: 'Side monitors', val: '2× Samsung C27F390', icon: Monitor },
+  { key: 'Monitor', val: 'Samsung Odyssey G5', icon: Monitor },
   { key: 'Microphone', val: 'Fifine A6V', icon: Mic },
   { key: 'Headphones', val: 'JBL Wave Beam & Wave Beam 2', icon: Headphones },
-  { key: 'BT Dongle', val: 'CSR 8510 A10', icon: Bluetooth }
+  { key: 'Bluetooth adapter', val: 'CSR 8510 A10', icon: Bluetooth }
 ];
 
 export default function Peripherals() {
