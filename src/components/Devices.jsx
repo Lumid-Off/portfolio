@@ -4,6 +4,7 @@ import { Smartphone, Apple, Skull, AlertTriangle, CheckCircle2, Star, ChevronDow
 import Section from './Section.jsx';
 
 const devices = [
+  { name: 'Apple iPad (6th generation)', meta: 'tablet', status: 'ok', brand: 'apple', specs: { 'Device': 'iPad', 'Generation': '6th generation' } },
   { name: 'MacBook Pro 14″ (2021)', meta: 'A2442', status: 'ok', brand: 'apple', specs: { 'Processor': 'Apple M1 Pro', 'Memory': '16 GB', 'Storage': '512 GB', 'System': 'macOS 27.0.1', 'Model': 'A2442' } },
   {
     name: 'Apple iPhone 14 Pro',
